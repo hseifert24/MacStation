@@ -1,0 +1,22 @@
+Adding to build.gradle:
+
+dependencies {
+    compile('io.springfox:springfox-swagger2:2.4.0')
+    compile('io.springfox:springfox-swagger-ui:2.4.0')
+}
+
+In Application Main:
+
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration // => That's all to enable swagger-springmvc out of the box
+@EnableAutoConfiguration // => That's all to enable swagger-springmvc out of the box
+@EnableSwagger2 // => That's all to enable swagger-springmvc out of the box
+
+
+
+RUN APPLICATION
+the go to http://localhost:8080/swagger-ui.html#

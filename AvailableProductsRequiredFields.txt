@@ -1,0 +1,19 @@
+if (!ca.baseCoverage.insured) {
+                                return false;
+                            }
+
+                            return ca.baseCoverage.insured.firstName === null ||
+                                ca.baseCoverage.insured.firstName === undefined ||
+                                ca.baseCoverage.insured.lastName === null ||
+                                ca.baseCoverage.insured.lastName === undefined ||
+                                ca.baseCoverage.insured.genderCd === null ||
+                                ca.baseCoverage.insured.genderCd === undefined ||
+                                ca.baseCoverage.insured.birthDtStr === null ||
+                                ca.baseCoverage.insured.birthDtStr === undefined ||
+                                ca.applicationStateProvCd === null ||
+                                ca.applicationStateProvCd === undefined ||
+                                ca.baseCoverage.insured.underwritingClassCd === null ||
+                                ca.baseCoverage.insured.underwritingClassCd === undefined ||
+                                ca.applicationTypeCd === null ||
+                                ca.applicationTypeCd === undefined;
+                        });
